@@ -3,14 +3,16 @@
   "version": "0.0.1",
   "description": "Lightweight boilerplate for SASS and TS projects",
   "scripts": {
-  	"tsc": "tsc",
-  	"tsc-watch": "tsc --watch",
+    "tsc": "tsc",
+    "tsc-watch": "tsc --watch",
     "build-css": "node-sass --include-path scss src/sass/main.scss src/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "bundle": "browserify src/main.ts -p [ tsify --noImplicitAny ] > src/bundle.js"
   },
   "devDependencies": {
     "node-sass": "^4.5.0",
     "nodemon": "^1.11.0",
+    "tsify": "^3.0.1",
     "typescript": "^2.1.6"
   }
 }
