@@ -1,5 +1,8 @@
 {
   "name": "bplite",
   "version": "0.0.1",
-  "description": "Lightweight boilerplate for SASS and TS projects"
+  "description": "Lightweight boilerplate for SASS and TS projects",
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  }
 }
