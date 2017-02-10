@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "outFile": "src/bundle.min.js"
+  },
+  "exclude": [
+    "node_modules",
+    ".npm"
+  ]
+}

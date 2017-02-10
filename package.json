@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Lightweight boilerplate for SASS and TS projects",
   "scripts": {
+  	"tsc": "tsc",
+  	"tsc-watch": "tsc --watch",
     "build-css": "node-sass --include-path scss src/sass/main.scss src/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
